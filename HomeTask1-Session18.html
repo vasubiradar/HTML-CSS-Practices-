@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Learning Tool</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #007bff; /* Light gray background */
+        }
+        .jumbotron {
+            background-image: url('https://e0.pxfuel.com/wallpapers/342/437/desktop-wallpaper-math-maths-fun-math.jpg'); /* Background image for jumbotron */
+            background-size: cover; /* Cover the entire jumbotron */
+            background-repeat: no-repeat; /* No repeat for the background */
+            color: white; /* White text color */
+            text-shadow: 2px 2px 4px #000000; /* Add text shadow for better readability */
+        }
+        .container {
+            margin-top: 30px; /* Add some space at the top */
+            background-color: #e9ecef; /* Light gray background color for the container */
+            padding: 20px; /* Add padding to the container */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center">
+    <h1>Math Learning Tool</h1>
+    <p>Practice multiplication with fun quizzes!</p>
+</div>
+
+<!-- Quiz Container -->
+<div class="container">
+    <div id="quiz" class="card">
+        <div class="card-body">
+            <h5 class="card-title">Multiplication Quiz</h5>
+            <p class="card-text">What is <span id="num1"></span> x <span id="num2"></span>?</p>
+            <input type="number" id="answer" class="form-control" placeholder="Enter your answer">
+            <button id="checkBtn" class="btn btn-primary mt-3">Check Answer</button>
+            <p id="result" class="mt-3"></p>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+    // Define an array of multiplication questions
+    var questions = [];
+
+    // Generate multiplication questions for numbers 1 to 10
+    for (var i = 1; i <= 10; i++) {
+        for (var j = 1; j <= 10; j++) {
+            questions.push({ num1: i, num2: j });
+        }
+    }
+
+    // Get random question from the array
+    function getRandomQuestion() {
+        var randomIndex = Math.floor(Math.random() * questions.length);
+        return questions[randomIndex];
+    }
+
+    // Display random question
+    function displayQuestion() {
+        var randomQuestion = getRandomQuestion();
+        document.getElementById('num1').textContent = randomQuestion.num1;
+        document.getElementById('num2').textContent = randomQuestion.num2;
+        document.getElementById('answer').value = '';
+        document.getElementById('result').textContent = '';
+    }
+
+    // Check user's answer
+    function checkAnswer() {
+        var userAnswer = document.getElementById('answer').value;
+        var correctAnswer = parseInt(document.getElementById('num1').textContent) * parseInt(document.getElementById('num2').textContent);
+
+        if (userAnswer === '') {
+            document.getElementById('result').textContent = 'Please enter your answer.';
+        } else if (parseInt(userAnswer) === correctAnswer) {
+            document.getElementById('result').textContent = 'Correct!';
+        } else {
+            document.getElementById('result').textContent = 'Incorrect. Try again!';
+        }
+    }
+
+    // Display initial question when the page loads
+    displayQuestion();
+
+    // Event listener for the "Check Answer" button
+    document.getElementById('checkBtn').addEventListener('click', checkAnswer);
+</script>
+
+</body>
+</html>

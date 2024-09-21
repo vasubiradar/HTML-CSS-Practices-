@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Profit Analysis</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Add custom styles here */
+    body {
+      background-image: url('https://th.bing.com/th/id/OIP.PiE2Q11mTRJ8u-SJxcleGQHaFj?rs=1&pid=ImgDetMain'); /* Set background image */
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+    .container {
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center mb-4">Stock Profit Analysis</h1>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <label for="investmentType">Investment Type</label>
+                <select class="form-control" id="investmentType">
+                  <option value="stock">Stock</option>
+                  <option value="bond">Bond</option>
+                  <option value="mutualFund">Mutual Fund</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="investmentAmount">Investment Amount ($)</label>
+                <input type="number" class="form-control" id="investmentAmount" placeholder="Enter investment amount">
+              </div>
+              <div class="form-group">
+                <label for="currentValue">Current Value ($)</label>
+                <input type="number" class="form-control" id="currentValue" placeholder="Enter current value">
+              </div>
+              <button type="button" class="btn btn-primary btn-block" onclick="calculateProfit()">Calculate Profit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="profitResult" class="mt-4"></div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+  <script>
+    function calculateProfit() {
+      var investmentType = document.getElementById("investmentType").value;
+      var investmentAmount = parseFloat(document.getElementById("investmentAmount").value);
+      var currentValue = parseFloat(document.getElementById("currentValue").value);
+      var profit = 0;
+
+      switch (investmentType) {
+        case "stock":
+          profit = currentValue - investmentAmount;
+          break;
+        case "bond":
+          profit = (currentValue - investmentAmount) * 0.8; // Assume 20% tax on bond profits
+          break;
+        case "mutualFund":
+          profit = currentValue - investmentAmount;
+          break;
+        default:
+          profit = 0;
+          break;
+      }
+
+      var profitMessage = "Your profit from the " + investmentType + " investment is $" + profit.toFixed(2);
+      document.getElementById("profitResult").innerHTML = "<div class='alert alert-success'>" + profitMessage + "</div>";
+    }
+  </script>
+</body>
+</html>

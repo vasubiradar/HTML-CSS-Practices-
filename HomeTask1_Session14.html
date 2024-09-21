@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanju's Online Bookstore</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('background-image-url.jpg');
+            background-size: cover;
+            color: white;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .carousel-item img {
+            height: 600px; /* Increase the size of the images */
+            object-fit: cover;
+        }
+
+        .carousel-item-overlay {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .carousel-item-overlay .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay color */
+        }
+
+        .carousel-item-overlay .carousel-caption {
+            position: absolute;
+            bottom: 20px; /* Adjust the position of the caption */
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: white;
+        }
+		 .card {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Sanju's Bookstore</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active carousel-item-overlay">
+                <img class="d-block w-100" src="https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/XVCIXNZMJAZBZCM4H4CPNW4QYM.png&w=916" alt="First slide">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h3>Featured Category 1</h3>
+                    <p>Explore a world of imagination and creativity with our wide range of fiction books.</p>
+                    <a href="#" class="btn btn-primary">View Books</a>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-overlay">
+                <img class="d-block w-100" src="https://miro.medium.com/v2/resize:fit:1200/1*S81O15rjKfG-BFdnNC6-GQ.jpeg" alt="Second slide">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h3>Featured Category 2</h3>
+                    <p>Travel to distant galaxies and envision the future with our captivating science fiction collection.</p>
+                    <a href="#" class="btn btn-primary">View Books</a>
+                </div>
+            </div>
+            <div class="carousel-item carousel-item-overlay">
+                <img class="d-block w-100" src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Third slide">
+                <div class="overlay"></div>
+                <div class="carousel-caption">
+                    <h3>Featured Category 3</h3>
+                    <p>Unravel thrilling mysteries and solve puzzles with our selection of mystery novels.</p>
+                    <a href="#" class="btn btn-primary">View Books</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+	<div class="container mt-5">
+    <h2 class="text-center mb-4">Featured Categories</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://storage.googleapis.com/brookes-workshop.appspot.com/images/44c962d1-84ce-42f8-b2b2-8d631b4d5155/literary-fiction-examples/1080w-literary-fiction-examples.jpg" class="card-img-top" alt="Fiction">
+                <div class="card-body">
+                    <h5 class="card-title">Fiction</h5>
+                    <p class="card-text">Explore a world of imagination and creativity with our wide range of fiction
+                        books.</p>
+                    <a href="#" class="btn btn-primary">View Books</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.cbgl9iLvC_cZ0VKvlpXApwHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Science Fiction">
+                <div class="card-body">
+                    <h5 class="card-title">Science Fiction</h5>
+                    <p class="card-text">Travel to distant galaxies and envision the future with our captivating
+                        science fiction collection.</p>
+                    <a href="#" class="btn btn-primary">View Books</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://rlv.zcache.co.uk/murder_mystery_genre_square_book_cover_sticker-r97b1f7b48276472fa93ff074b44bb5a3_v9wf3_8byvr_630.jpg?view_padding=[285%2C0%2C285%2C0]" class="card-img-top" alt="Mystery">
+                <div class="card-body">
+                    <h5 class="card-title">Mystery</h5>
+                    <p class="card-text">Unravel thrilling mysteries and solve puzzles with our selection of mystery
+                        novels.</p>
+                    <a href="#" class="btn btn-primary">View Books</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

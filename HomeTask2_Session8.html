@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion Blog Homepage</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color:pink;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .featured-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+    .card {
+      border: none;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      object-fit: cover;
+      height: 200px;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .btn-subscribe {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .btn-subscribe:hover {
+      background-color: #0056b3;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      font-weight: bold;
+    }
+    input[type="email"],
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Fashionista Blog</h1>
+    <div class="featured-grid">
+      <!-- Bootstrap Cards for Featured Articles -->
+      <div class="card">
+            <img src="https://fashiondeal.in/image/cache/catalog/products_2023/white-black-printed-and-mirror-work-gujarati-garba-navratri-lehenga-chaniya-choli-10193-1000x1300w.jpg" alt="Article 1">
+            <div class="card-body">
+                <h5 class="card-title">fashion lehengas</h5>
+                <p class="card-text">Discover the latest trends in fashion lehengas and explore stunning designs that will make you dazzle on your special day.</p>
+            </div>
+        </div>
+        <!-- Add more cards for featured articles -->
+        <div class="card">
+            <img src="https://www.beyoung.in/blog/wp-content/uploads/2020/02/LEHANGA-DRESS-min-768x922.jpg" alt="Article 2">
+            <div class="card-body">
+                <h5 class="card-title">party lehengas</h5>
+                <p class="card-text">Explore the world of party lehengas and get inspired by glamorous designs perfect for weddings, receptions, and festive occasions.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://wallpaperaccess.com/full/6154560.jpg" alt="Article 3">
+            <div class="card-body">
+                <h5 class="card-title">makeup and skincare</h5>
+                <p class="card-text">Learn essential tips and tricks for makeup application and skincare to achieve a flawless and radiant complexion.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://cdn0.weddingwire.in/articles/images/9/8/2/3/img_73289/wedding-hairstyles-aanal-savaliya-waterfall-braid.jpg" alt="Article 4">
+            <div class="card-body">
+                <h5 class="card-title">hairstyles</h5>
+                <p class="card-text">Discover the latest hair trends and hairstyles, from chic updos to playful braids, perfect for any occasion.</p>
+            </div>
+        </div>
+      <!-- Add more cards for featured articles -->
+    </div>
+    <hr>
+    <!-- Registration Form -->
+    <h2>Subscribe to Our Newsletter</h2>
+    <form action="#">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      </div>
+      <button type="submit" class="btn btn-subscribe">Subscribe</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

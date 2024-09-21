@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessFusion Gym</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://img.freepik.com/premium-photo/contemporary-spotless-fitness-gym-center-interiorgenerative-ai_391052-10889.jpg?size=626&ext=jpg&ga=GA1.1.1395880969.1710201600&semt=ais');
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: white;
+            color: black;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+
+        table {
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        th {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .glyphicon {
+            margin-right: 5px;
+        }
+
+        /* Custom CSS for membership tiers */
+        .membership-tier {
+            color: white; /* Change text color to white */
+        }
+
+        /* Custom CSS for footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer form {
+            text-align: center;
+        }
+
+        footer input[type="email"],
+        footer input[type="submit"] {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        footer input[type="submit"] {
+            background-color: #f8f9fa;
+            color: #343a40;
+            cursor: pointer;
+        }
+
+        footer input[type="submit"]:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">FitnessFusion Gym</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Schedule</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> Email</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Alert for Payment Reminders -->
+    <div class="alert alert-warning" role="alert">
+        <strong>Payment Reminder:</strong> Your gym membership renewal is due soon. Please make payment to continue access.
+    </div>
+
+    <!-- Bootstrap Table for Member Data -->
+    <div class="container">
+        <h3>Member Data</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Membership Type</th>
+                    <th>Join Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample member data rows -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>Gold</td>
+                    <td>2022-01-15</td>
+                    <td>Active</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane Smith</td>
+                    <td>Silver</td>
+                    <td>2022-02-20</td>
+                    <td>Active</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Glyphicons for Membership Tiers -->
+    <div class="container">
+        <h3>Membership Tiers</h3>
+        <p class="membership-tier"><span class="glyphicon glyphicon-star"></span> Gold Membership</p>
+        <p class="membership-tier"><span class="glyphicon glyphicon-silver"></span> Silver Membership</p>
+        <p class="membership-tier"><span class="glyphicon glyphicon-certificate"></span> Bronze Membership</p>
+    </div>
+
+    <!-- Footer with Membership Form -->
+    <footer>
+        <div class="container">
+            <h3><span class="glyphicon glyphicon-envelope"></span> Join Our Gym</h3>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Join Now">
+            </form>
+        </div>
+    </footer>
+
+  
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-vZFGwXXO5QS6q7gJC3ZrY5J2b/5DL+viFCu4ZOxSN2WpL+Z1HuOJHmlBj3g/5JvZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

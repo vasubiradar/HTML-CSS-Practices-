@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rashi's Image Collection</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f0f0f0; /* Light gray background */
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .image-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+
+    .image-box {
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .image-box img {
+      width: 100%;
+      transition: transform 0.3s ease;
+    }
+
+    .circular-img {
+      border-radius: 50%;
+    }
+
+    .rounded-img {
+      border-radius: 20px;
+    }
+    
+    .image-box img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Rashi's Image Collection</h2>
+
+    <div class="image-grid">
+      <!-- First Image -->
+      <div class="image-box">
+        <img src="https://wallpapercave.com/wp/wp2610415.jpg" alt="Image 1" class="circular-img">
+      </div>
+      <!-- Second Image -->
+      <div class="image-box">
+        <img src="https://c.stocksy.com/a/CzW300/z9/841786.jpg" alt="Image 2" class="rounded-img">
+      </div>
+      <!-- Third Image -->
+      <div class="image-box">
+        <img src="https://assets.onyamagazine.com/wp-content/uploads/2020/09/25173231/Screen-Shot-2020-09-25-at-5.32.24-pm.png" alt="Image 3">
+      </div>
+      <!-- Fourth Image -->
+      <div class="image-box">
+        <img src="https://th.bing.com/th/id/OIP.nv9g-1pv95SNmT7Lsj26HwHaE7?rs=1&pid=ImgDetMain" alt="Image 4" class="circular-img">
+      </div>
+      <!-- Fifth Image -->
+      <div class="image-box">
+        <img src="https://th.bing.com/th/id/OIP.8eJNMEsDP4uYuV4dl--i9gHaE8?rs=1&pid=ImgDetMain" alt="Image 5" class="rounded-img">
+      </div>
+      <!-- Sixth Image -->
+      <div class="image-box">
+        <img src="https://www.wallpaperflare.com/static/335/587/630/blooming-lotus-flower-selective-focus-photography-wallpaper.jpg" alt="Image 6">
+      </div>
+      <!-- Seventh Image -->
+      <div class="image-box">
+        <img src="https://th.bing.com/th/id/OIP.nxHZBvMP_R55v4XFEgu-5wHaE3?rs=1&pid=ImgDetMain" alt="Image 7" class="circular-img">
+      </div>
+      <!-- Eighth Image -->
+      <div class="image-box">
+        <img src="https://th.bing.com/th/id/OIP.OOqtfbSfeaAS4j_M9ScLRgHaE8?w=3072&h=2048&rs=1&pid=ImgDetMain" alt="Image 8">
+      </div>
+      <!-- Ninth Image -->
+      <div class="image-box">
+        <img src="https://th.bing.com/th/id/OIP.YAXlTjvtEKchdMVc5laZhwHaE8?rs=1&pid=ImgDetMain" alt="Image 9" class="rounded-img">
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Discoveries Showcase</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        .jumbotron {
+            background-image: url('https://wallpapercave.com/wp/wp2780735.jpg'); /* Background image URL */
+            background-size: cover; /* Cover the entire jumbotron */
+            color: black; /* White text color */
+        }
+        .footer {
+            background-color: #007bff; /* Blue footer background */
+            color: white; /* White text color */
+            padding: 20px 0; /* Adjust padding */
+            text-align: center; /* Center-align text */
+        }
+        .card-img-top {
+            height: 200px; /* Set height for card images */
+            object-fit: cover; /* Cover the card image area */
+        }
+        .form-bg {
+            background-image: url('https://www.cfgi.com/wp-content/uploads/2022/03/Sema4.jpg'); /* Background image URL */
+            background-size: cover; /* Cover the entire form background */
+            padding: 20px; /* Add padding to the form */
+			
+        }
+    </style>
+</head>
+<body>
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center">
+    <h1>Scientific Discoveries Showcase</h1>
+    <p>Explore fascinating experiments and discoveries!</p>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+    <div class="row">
+        <!-- JavaScript code for displaying cards -->
+        <script>
+            // Array of scientific discoveries
+            var discoveries = [
+                { title: "DNA Structure", image: "https://th.bing.com/th/id/OIP.X4MDj9KFuCVAiYUV61_2sAHaFj?rs=1&pid=ImgDetMain", description: "Discover the double helix structure of DNA." },
+                { title: "Black Hole", image: "https://cdn.mos.cms.futurecdn.net/eC6Q4Civ8TurCZbYA5wNmm.jpg", description: "Explore the mysterious phenomena of black holes." },
+                { title: "Quantum Mechanics", image: "https://cdn.mos.cms.futurecdn.net/ayTnhRypWyGEgi5zod4RAd.jpg", description: "Dive into the world of quantum mechanics and uncertainty." }
+            ];
+
+            // Loop through the discoveries array and create cards dynamically
+            for (var i = 0; i < discoveries.length; i++) {
+                document.write('<div class="col-md-4 mb-4">');
+                document.write('<div class="card">');
+                document.write('<img src="' + discoveries[i].image + '" class="card-img-top" alt="' + discoveries[i].title + '">');
+                document.write('<div class="card-body">');
+                document.write('<h5 class="card-title">' + discoveries[i].title + '</h5>');
+                document.write('<p class="card-text">' + discoveries[i].description + '</p>');
+                document.write('</div>');
+                document.write('</div>');
+                document.write('</div>');
+            }
+        </script>
+    </div>
+</div>
+<!-- Form -->
+<div class="container form-bg">
+    <form>
+	
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<br>
+<br>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Learn More">Learn More</button>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

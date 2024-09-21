@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Collage</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .circle-img {
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+    }
+
+    .rounded-img {
+      border-radius: 20px;
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin: 10px;
+    }
+
+    .collage-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .collage-container img {
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .collage-container img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 class="text-center my-4">Image Collage</h1>
+  <div class="collage-container">
+    <img src="https://th.bing.com/th/id/OIP.G9s_EiLkQZkXeVwYJNpraQHaFj?rs=1&pid=ImgDetMain" alt="Image 1" class="circle-img">
+    <img src="https://th.bing.com/th/id/OIP.X0vRDAkgM6qtrH9sUU-jTQHaE8?rs=1&pid=ImgDetMain" alt="Image 2" class="rounded-img">
+    <img src="https://th.bing.com/th/id/OIP.q72lJYmIzRC8SouPYDjjcQHaEo?rs=1&pid=ImgDetMain" alt="Image 3" class="circle-img">
+    <img src="https://th.bing.com/th/id/OIP.Bd9zBcDr9jXYxPjA-2AD1wHaEo?rs=1&pid=ImgDetMain" alt="Image 4" class="rounded-img">
+    <img src="https://th.bing.com/th/id/OIP.gvpweiaCZKF7hVADY5VkLgHaHa?rs=1&pid=ImgDetMain" alt="Image 5" class="circle-img">
+    <img src="https://th.bing.com/th/id/OIP.HsVjqk6fGyi9nj6akwFz6AHaEK?rs=1&pid=ImgDetMain" alt="Image 6" class="rounded-img">
+    <img src="https://th.bing.com/th/id/OIP.I0B5N_Jnb52kllx_S1e2yQHaEK?rs=1&pid=ImgDetMain" alt="Image 7" class="circle-img">
+    <img src="https://globalgap.unc.edu/wp-content/uploads/sites/5882/2016/01/pvige-3.jpg" alt="Image 8" class="rounded-img">
+    <img src="https://th.bing.com/th/id/OIP.gvpweiaCZKF7hVADY5VkLgHaHa?rs=1&pid=ImgDetMain" alt="Image 9" class="circle-img">
+  </div>
+</div>
+
+<!-- Bootstrap 4 JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Great Treasure Hunt</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://t3.ftcdn.net/jpg/05/25/05/36/360_F_525053635_uIM8Ay8JD5NUAyLwjtOccUZtU9f3KDW7.jpg');
+            background-size: cover;
+            padding-top: 50px;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .gate-card {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+        }
+
+        .gate-input {
+            width: 150px;
+        }
+
+        .btn-check {
+            margin-top: 10px;
+        }
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>The Great Treasure Hunt</h2>
+        <div class="card-container">
+		 <div class="gate-card">
+                <h4>Guess The Gate Number</h4>
+                <input type="number" class="gate-input" placeholder="Enter Key Number" id="key3">
+                <button class="btn btn-primary btn-check" onclick="checkKey(3)">Check Key</button>
+                <p id="result3"></p>
+            </div>
+            <div class="gate-card">
+			
+                <h4>Guess The Gate Number</h4>
+                <input type="number" class="gate-input" placeholder="Enter Key Number" id="key1">
+                <button class="btn btn-primary btn-check" onclick="checkKey(1)">Check Key</button>
+                <p id="result1"></p>
+            </div>
+            <div class="gate-card">
+                <h4>Guess The Gate Number</h4>
+                <input type="number" class="gate-input" placeholder="Enter Key Number" id="key2">
+                <button class="btn btn-primary btn-check" onclick="checkKey(2)">Check Key</button>
+                <p id="result2"></p>
+            </div>
+           
+          
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-vZFGwXXO5QS6q7gJC3ZrY5J2b/5DL+viFCu4ZOxSN2WpL+Z1HuOJHmlBj3g/5JvZ"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function checkKey(gateNumber) {
+            var keyInput = document.getElementById("key" + gateNumber);
+            var result = document.getElementById("result" + gateNumber);
+            var keyNumber = parseInt(keyInput.value);
+            var gateNumber = gateNumber; // You can remove this line if not needed
+
+            // Replace this condition with your logic for comparing key and gate numbers
+            if (keyNumber === gateNumber) {
+                result.innerHTML = "Success! You opened the gate!";
+            } else {
+                result.innerHTML = "Oops! The key doesn't fit this gate.";
+            }
+        }
+    </script>
+</body>
+
+</html>

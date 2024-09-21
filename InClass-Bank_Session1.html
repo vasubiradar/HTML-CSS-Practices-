@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Account Opening Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: gray; /* Common background color */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.registration-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 2 2 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-right: 20px;
+  width: 400px; /* Adjust the width of the registration box */
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+input[type="date"] {
+  width: calc(100% - 20px); /* Adjust the width of form inputs */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 60%;
+  border-radius: 10px;
+}
+</style>
+  <div class="container">
+    <div class="registration-box">
+	
+      <h2>Bank Account Opening Registration</h2>
+      <p>Please fill out the form below to open a new bank account with us.</p>
+      <form>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="dob">Date of Birth</label>
+          <input type="date" id="dob" name="dob" required>
+        </div>
+        
+        <button type="submit">Submit</button>
+      </form>
+      <p>By submitting this form, you agree to our <a href="#">terms and conditions</a>.</p>
+    </div>
+	
+    <img src="https://images.hindustantimes.com/img/2021/07/24/1600x900/RBI_1627088344086_1627088360876.jpg" alt="Bank Image">
+  </div>
+</body>
+</html>

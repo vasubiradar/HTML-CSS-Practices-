@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Quiz</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Add background color to the whole page */
+    body {
+      background-color: #f0f0f0; /* Light gray background */
+    }
+    .container {
+      background-color: white; /* Set container background to white */
+      padding: 20px; /* Add padding to the container */
+      margin-top: 20px; /* Add some top margin for better spacing */
+    }
+    .card {
+      margin-bottom: 20px;
+    }
+    /* Add different colors to options */
+    .btn-custom-1 {
+      background-color: #ff9999;
+      color: #333;
+    }
+    .btn-custom-2 {
+      background-color: #99ff99;
+      color: #333;
+    }
+    .btn-custom-3 {
+      background-color: #9999ff;
+      color: #333;
+    }
+    /* Add hover effect with border outline */
+    .btn-custom-1:hover, .btn-custom-2:hover, .btn-custom-3:hover {
+      border: 2px solid #333;
+      background-color: transparent;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1 class="text-center mb-4">Online Quiz</h1>
+  
+  <!-- Question 1 -->
+  <div class="card mb-4">
+    <div class="card-header">
+      Question 1: What is the capital of France?
+    </div>
+    <div class="card-body">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-custom-1">
+          <input type="radio" name="question1" id="option1" autocomplete="off"> Paris
+        </label>
+        <label class="btn btn-custom-2">
+          <input type="radio" name="question1" id="option2" autocomplete="off"> London
+        </label>
+        <label class="btn btn-custom-3">
+          <input type="radio" name="question1" id="option3" autocomplete="off"> Berlin
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="card mb-4">
+    <div class="card-header">
+      Question 2: Which planet is known as the Red Planet?
+    </div>
+    <div class="card-body">
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-custom-1">
+          <input type="radio" name="question2" id="option1" autocomplete="off"> Venus
+        </label>
+        <label class="btn btn-custom-2">
+          <input type="radio" name="question2" id="option2" autocomplete="off"> Mars
+        </label>
+        <label class="btn btn-custom-3">
+          <input type="radio" name="question2" id="option3" autocomplete="off"> Jupiter
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn-success btn-lg btn-block">Submit Quiz</button>
+</div>
+
+<!-- Bootstrap Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

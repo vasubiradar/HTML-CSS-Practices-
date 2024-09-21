@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HealthTrack Hospital</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    /* Custom CSS styles for HealthTrack Hospital Patient Portal */
+    body {
+      background-image: url('background_image.jpg'); /* Specify the path to your background image */
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .navbar {
+      background-color: #007bff !important;
+      padding: 15px;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .glyphicon-heart {
+      color: red;
+    }
+
+    .glyphicon-alert {
+      color: orange;
+    }
+
+    .table-responsive {
+      margin-top: 20px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 30px;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">HealthTrack Hospital</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <Br>
+  <br>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.-4klJtL_8XlZE5ICmt_YWwHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="Medical Records">
+          <div class="card-body">
+            <h5 class="card-title">Medical Records</h5>
+            <p class="card-text">View your medical history and reports.</p>
+            <a href="#" class="btn btn-primary">View Records</a>
+          </div>
+        </div>
+      </div>
+      <!-- Add more cards -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.fWYj-Yj8pyzh6y9kiai21AHaKe?rs=1&pid=ImgDetMain" class="card-img-top" alt="Appointment Details">
+          <div class="card-body">
+            <h5 class="card-title">Appointment Details</h5>
+            <p class="card-text">View and manage your upcoming appointments.</p>
+            <a href="#" class="btn btn-primary">View Appointments</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="https://th.bing.com/th/id/OIP.jgO7dHJdGad622D8ESRLBwHaJk?rs=1&pid=ImgDetMain" class="card-img-top" alt="Prescription Reminders">
+          <div class="card-body">
+            <h5 class="card-title">Prescription Reminders</h5>
+            <p class="card-text">Receive reminders for your medication prescriptions.</p>
+            <a href="#" class="btn btn-primary">View Reminders</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Alert for Appointment Confirmation -->
+<div class="alert alert-success" role="alert">
+  <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+  Appointment Confirmed: Your appointment for [DATE] at [TIME] has been successfully scheduled.
+</div>
+
+<!-- Alert for Prescription Reminder -->
+<div class="alert alert-warning" role="alert">
+  <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+  Prescription Reminder: Don't forget to take your medication as prescribed by your doctor.
+</div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

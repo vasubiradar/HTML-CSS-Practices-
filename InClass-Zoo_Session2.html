@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Animal List</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('https://media.istockphoto.com/id/1355516422/photo/entrance-to-the-oakland-zoo-on-a-sunny-day-with-animal-representations-and-plants-decorating.jpg?s=612x612&w=0&k=20&c=wVeCfcDBdalL0NNJaE5VX2tXkogIQDCfLiv-_eKFxjc=');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .animal-table {
+      width: 200px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      margin: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .animal-table h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    .animal-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .animal-list li {
+      margin-bottom: 5px;
+      border: 1px solid #333;
+      padding: 5px;
+    }
+
+    .green-bg { background-color: lightgreen; }
+    .yellow-bg { background-color: lightyellow; }
+    .pink-bg { background-color: lightpink; }
+    .blue-bg { background-color: lightblue; }
+    .orange-bg { background-color: orange; }
+
+    .animal-img {
+      max-width: 150px;
+      display: block;
+      margin: 0 auto;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="animal-table green-bg">
+      <h2>Lion</h2>
+      <ul class="animal-list">
+        <li><img class="animal-img" src="https://img.freepik.com/free-photo/portrait-lion-ai-generated_268835-4278.jpg" alt="Lion"></li>
+       
+        <!-- Add more images here -->
+      </ul>
+    </div>
+
+    <div class="animal-table yellow-bg">
+      <h2>Elephant</h2>
+      <ul class="animal-list">
+        <li><img class="animal-img" src="https://files.worldwildlife.org/wwfcmsprod/images/African_Elephant_Walking/story_carousel/3arzfzjsw0_Medium_WW1113482.jpg" alt="Elephant"></li>
+       
+        <!-- Add more images here -->
+      </ul>
+    </div>
+
+    <div class="animal-table pink-bg">
+      <h2>Pigven</h2>
+      <ul class="animal-list">
+        <li><img class="animal-img" src="https://nzbirdsonline.org.nz/sites/all/files/2X2A1697%20King%20Penguin%20bol.jpg" alt="Penguin"></li>
+    
+        <!-- Add more images here -->
+      </ul>
+    </div>
+
+    <div class="animal-table blue-bg">
+      <h2>Panda</h2>
+      <ul class="animal-list">
+      
+        <li><img class="animal-img" src="https://media.istockphoto.com/id/523761634/photo/cute-panda-bear-climbing-in-tree.jpg?s=612x612&w=0&k=20&c=TxsmORsbuY1LpxQsc6T8fpWJo7lBwncciYhroAr8rXI=" alt="Panda"></li>
+        <!-- Add more images here -->
+      </ul>
+    </div>
+
+    <div class="animal-table orange-bg">
+      <h2>Gorilla</h2>
+      <ul class="animal-list">
+        <li><img class="animal-img" src="https://files.worldwildlife.org/wwfcmsprod/images/HERO_Mountain_Gorilla_Silverback_WW22557/story_full_width/5zoaj3l0f_Mountain_Gorilla_Silverback_WW22557.jpg" alt="Gorilla"></li>
+       
+        <!-- Add more images here -->
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

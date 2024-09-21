@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speedy Cars Showroom</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Background color for the whole page */
+        }
+
+        .navbar {
+            background-color: #343a40 !important; /* Navbar background color */
+        }
+
+        .navbar-brand {
+            color: #ffffff !important; /* Navbar brand text color */
+        }
+
+        .navbar-nav .nav-link {
+            color: #ffffff !important; /* Navbar links text color */
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-img-overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay color for card images */
+            color: #ffffff;
+            transition: 0.5s;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .card:hover .card-img-overlay {
+            opacity: 1;
+        }
+
+        /* Table hover effect */
+        .table-hover tbody tr:hover {
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Speedy Cars Showroom</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Brand 1</a>
+                            <a class="dropdown-item" href="#">Brand 2</a>
+                            <a class="dropdown-item" href="#">Brand 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Card Deck for Car Images -->
+    <div class="container mt-5">
+        <div class="card-deck">
+            <!-- Card 1 -->
+            <div class="card">
+                <img src="https://autojosh.com/wp-content/uploads/2017/06/bugatti-chiron-2016-mas-p2_1920x1600c-1.jpg" class="card-img-top" alt="Car 1">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Car 1</h5>
+                    <p class="card-text">Short description about Car 1.</p>
+                    <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card">
+                <img src="https://www.motoringresearch.com/wp-content/uploads/2017/10/03_types_of_cars-1200x800.jpg" class="card-img-top" alt="Car 2">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Car 2</h5>
+                    <p class="card-text">Short description about Car 2.</p>
+                    <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <img src="https://www.top5list.net/wp-content/uploads/2017/01/top5s-sports-cars-1-1900x1062_c.jpg" class="card-img-top" alt="Car 3">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Car 3</h5>
+                    <p class="card-text">Short description about Car 3.</p>
+                    <a href="#" class="btn btn-primary">More Info</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table for Car Details -->
+    <div class="container mt-5">
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Car Name</th>
+                    <th scope="col">Average Speed</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Car 1</td>
+                    <td>200 km/h</td>
+                    <td>$30,000</td>
+                </tr>
+                <tr>
+                    <td>Car 2</td>
+                    <td>180 km/h</td>
+                    <td>$25,000</td>
+                </tr>
+                <tr>
+                    <td>Car 3</td>
+                    <td>220 km/h</td>
+                    <td>$35,000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Feedback Form in the Footer -->
+   <footer class="mt-5 p-4 bg-dark text-white">
+    <div class="container">
+        <h5 class="text-center mb-4">We value your feedback</h5>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="3" placeholder="Your Feedback"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light btn-block">Submit Feedback</button>
+        </form>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

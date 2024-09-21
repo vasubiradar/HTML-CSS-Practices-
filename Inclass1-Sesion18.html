@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalog</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        .jumbotron {
+            background-image: url('https://th.bing.com/th/id/OIP.QX9tbZfkYVVAwUQ6mcnsEAHaDt?rs=1&pid=ImgDetMain'); /* Background image */
+            background-size: cover; /* Cover the entire jumbotron */
+            background-position: center; /* Center the background image */
+            color: black; /* White text color */
+        }
+        .card-img-overlay {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            color: white; /* White text color */
+        }
+        /* Hover effect for table rows */
+        tbody tr:hover {
+            background-color: #f2f2f2; /* Light gray background color */
+        }
+        /* Different row colors */
+        tbody tr:nth-child(odd) {
+            background-color: #e9ecef; /* Light grayish-blue background color */
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ced4da; /* Light grayish-blue background color */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <h1 class="display-4">Your one-stop destination for online shopping</h1>
+    
+</div>
+
+<!-- Table -->
+<div class="container">
+    <table id="productTable" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Product Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Availability</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table rows will be dynamically added here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Card -->
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d2df8387350097.5db5c3936fd07.jpg" class="card-img" alt="Product Image">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Special Offer</h5>
+                    <p class="card-text">Check out our exclusive deals!</p>
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="View Product">View Product</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://s3b.cashify.in/gpro/uploads/2021/09/15140000/Best-Smartphone-Deals-on-Flipkart-Big-Billion-Day-Sale.jpg" class="card-img" alt="Product Image 2">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">New Arrival</h5>
+                    <p class="card-text">Explore the latest trends!</p>
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="View Product">View Product</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img src="https://th.bing.com/th/id/OIP.QdeExjmxCWOING2V6XXAOAHaEH?rs=1&pid=ImgDetMain" class="card-img" alt="Product Image 3">
+                <div class="card-img-overlay">
+                    <h5 class="card-title">Best Sellers</h5>
+                    <p class="card-text">Discover our top-rated products!</p>
+                    <button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="View Product">View Product</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<script>
+    // Array of product names from Flipkart
+    var productNames = ["Laptop", "Smartphone", "Headphones", "Camera", "Smartwatch"];
+
+    // Function to dynamically add rows to the table
+    function addRows() {
+        var tableBody = document.querySelector("#productTable tbody");
+
+        for (var i = 0; i < 3; i++) {
+            var productName = productNames[i];
+            var price = "$" + (Math.floor(Math.random() * 500) + 50); // Random price
+            var availability = "In Stock"; // Assuming all products are in stock
+
+            var row = `<tr>
+                <td>${productName}</td>
+                <td>${price}</td>
+                <td>${availability}</td>
+            </tr>`;
+
+            tableBody.innerHTML += row;
+        }
+    }
+
+    // Call the function to add rows when the page loads
+    addRows();
+</script>
+
+</body>
+</html>

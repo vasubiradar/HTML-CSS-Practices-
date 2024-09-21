@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plant Nursery</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f0f0f0; /* Light gray background */
+    }
+    .plant-img {
+      width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Plant Nursery Logo</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Types of Plants
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Flowering Plants</a>
+              <a class="dropdown-item" href="#">Indoor Plants</a>
+              <a class="dropdown-item" href="#">Outdoor Plants</a>
+              <a class="dropdown-item" href="#">Succulents</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/300" alt="Flowering Plant" class="plant-img">
+          <div class="card-body">
+            <h5 class="card-title">Flowering Plant</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/300" alt="Indoor Plant" class="plant-img">
+          <div class="card-body">
+            <h5 class="card-title">Indoor Plant</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4">
+          <img src="https://via.placeholder.com/300" alt="Outdoor Plant" class="plant-img">
+          <div class="card-body">
+            <h5 class="card-title">Outdoor Plant</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered mt-4">
+          <thead>
+            <tr>
+              <th>Plant Type</th>
+              <th>Total Number</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Flowering Plants</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>Indoor Plants</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Outdoor Plants</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Succulents</td>
+              <td>20</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Underwater Adventure</title>
+    <style>
+        body {
+            font-family: 'Copperplate', 'Papyrus', fantasy;
+            background-color: #87CEEB; /* Light Blue */
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: #1E90FF; /* Dodger Blue */
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #4682B4; /* Steel Blue */
+            padding: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .animal-box {
+            background-color: black; /* Cornsilk */
+            padding: 0px;
+            margin: 5px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .animal-box:hover {
+            background-color: #FFFFE0; /* Light Yellow */
+        }
+
+        img {
+            max-width: 80%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Underwater Adventure</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#fish">Fish</a></li>
+			 <li><a href="#octopus">Star Fish</a></li>
+            <li><a href="#dolphin">Dolphin</a></li>
+            <li><a href="#octopus">Octopus</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div id="fish" class="animal-box">
+            <h2>Fish</h2>
+            <img src="https://th.bing.com/th/id/OIP.VjzOHxe3C4LOgOAyYdDCUwHaEU?rs=1&pid=ImgDetMain" alt="Fish Image">
+            <p>Explore the vibrant world of fish in the deep blue sea.</p>
+        </div>
+		
+		<div id="fish" class="animal-box">
+            <h2>Star Fish</h2>
+            <img src="https://th.bing.com/th/id/OIP.0TDC01N5Y533HxY1GOSZtAHaFj?rs=1&pid=ImgDetMain" alt="Fish Image">
+            <p>Explore the vibrant world of  Star fish in the deep blue sea.</p>
+        </div>
+
+        <div id="dolphin" class="animal-box">
+            <h2>Dolphin</h2>
+            <img src="https://th.bing.com/th/id/R.25ed078d2ecf693a0a23affbe3787957?rik=5onEZ%2bP7hWURsQ&riu=http%3a%2f%2fwww.hdwallpaperspulse.com%2fwp-content%2fuploads%2f2014%2f03%2f17%2f25ed078d2ecf693a0a23affbe37879573.jpg&ehk=McDJxNtvksSYmX7%2fpJQ1aLLtWh8ELLeABjCB0GljhzM%3d&risl=&pid=ImgRaw&r=0" alt="Dolphin Image">
+            <p>Swim alongside playful dolphins and experience their grace.</p>
+        </div>
+
+        <div id="octopus" class="animal-box">
+            <h2>Octopus</h2>
+            <img src="https://th.bing.com/th/id/OIP.RDSuqOZyhPfjFlblDiAr8QHaHa?w=650&h=650&rs=1&pid=ImgDetMain" alt="Octopus Image">
+            <p>Meet the intelligent and mysterious creatures of the ocean, the octopuses.</p>
+        </div>
+    </section>
+</body>
+</html>

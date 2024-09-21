@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milind's Kitchen</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light gray background */
+        }
+        .navbar {
+            background-color: #000; /* Black navbar background */
+            color: #fff; /* White text color */
+        }
+        .footer {
+            background-color: #000; /* Black footer background */
+            color: #fff; /* White text color */
+            padding: 20px 0; /* Adjust padding */
+            text-align: center; /* Center-align text */
+        }
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+            gap: 20px; /* Gap between cards */
+            margin-top: 30px; /* Margin from the top */
+        }
+        .card {
+            border: 1px solid #ccc; /* Border for cards */
+            border-radius: 5px; /* Rounded corners */
+            overflow: hidden; /* Hide overflowing content */
+        }
+        .card img {
+            width: 100%; /* Ensure images fill the card */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .card-body {
+            padding: 10px; /* Padding for card body */
+        }
+        .btn {
+            width: 100%; /* Button width */
+        }
+		  .navbar {
+            background-color: #000; /* Black navbar background */
+            color: #fff; /* White text color */
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Milind's Kitchen</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Food Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Pizza</a>
+                    <a class="dropdown-item" href="#">Pasta</a>
+                    <a class="dropdown-item" href="#">Burger</a>
+                    <a class="dropdown-item" href="#">Tacos</a>
+                    <a class="dropdown-item" href="#">Sushi</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<!-- Main Content -->
+<div class="container">
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.uyzanAYnyqFgMOmOpo4qwQHaHa?w=640&h=640&rs=1&pid=ImgDetMain" class="card-img-top" alt="British Food">
+            <div class="card-body">
+                <h5 class="card-title">British Food</h5>
+                <button class="btn btn-primary">View Recipe</button>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://www.ocado.com/cmscontent/recipe_image_large/37859664.jpg?cNaq" class="card-img-top" alt="British Food">
+            <div class="card-body">
+                <h5 class="card-title">British Food</h5>
+                <button class="btn btn-primary">View Recipe</button>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2017/10/exps194944_EDSC163648D01_26_6b-1-2-700x700.jpg" class="card-img-top" alt="British Food">
+            <div class="card-body">
+                <h5 class="card-title">British Food</h5>
+                <button class="btn btn-primary">View Recipe</button>
+            </div>
+        </div>
+        <!-- Add more cards as needed -->
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" id="messageInput" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit</button>
+        </form>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>

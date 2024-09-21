@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Travel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://images.hdqwalls.com/wallpapers/neblua-space-planet-art-4k-ye.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+        }
+
+        .galaxy-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .galaxy-box {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .galaxy-image {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .galaxy-box:hover .galaxy-image {
+            transform: scale(1.2);
+        }
+
+        .galaxy-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            text-align: left;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .know-more-btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel the Galaxy</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="galaxy-container">
+
+            <!-- Mercury Card -->
+            <div class="galaxy-box">
+                <div class="card">
+                    <img class="card-img-top galaxy-image" src="https://www.universetoday.com/wp-content/uploads/2014/12/Mercury-Messenger-enhanced-color.jpg" alt="Mercury">
+                    <div class="galaxy-info">
+                        <h2 class="card-title">Mercury</h2>
+                        <p class="card-text">Mercury is the smallest and closest planet to the Sun in our solar system.</p>
+						 <a href="#" class="btn btn-primary know-more-btn">Know More</a>
+            
+                    </div>
+                </div>
+            </div>
+
+            <!-- Venus Card -->
+            <div class="galaxy-box">
+                <div class="card">
+                    <img class="card-img-top galaxy-image" src="https://th.bing.com/th/id/OIP.yOIYs7FwH9USB0rsRjcj9wHaHa?rs=1&pid=ImgDetMain" alt="Venus">
+                    <div class="galaxy-info">
+                        <h2 class="card-title">Venus</h2>
+                        <p class="card-text">Venus is often called Earth's "sister planet" due to their similar size and composition.</p>
+						 <a href="#" class="btn btn-primary know-more-btn">Know More</a>
+            
+                    </div>
+                </div>
+            </div>
+
+            <!-- Earth Card -->
+            <div class="galaxy-box">
+                <div class="card">
+                    <img class="card-img-top galaxy-image" src="https://th.bing.com/th/id/OIP.abdxP0HmrPOfcTzXIP2m3AHaHa?rs=1&pid=ImgDetMain" alt="Earth">
+                    <div class="galaxy-info">
+                        <h2 class="card-title">Earth</h2>
+                        <p class="card-text">Earth is the only known planet to support life and has a diverse and beautiful environment.</p>
+						 <a href="#" class="btn btn-primary know-more-btn">Know More</a>
+            
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jupiter Card -->
+            <div class="galaxy-box">
+                <div class="card">
+                    <img class="card-img-top galaxy-image" src="https://th.bing.com/th/id/OIP.1iX4E_oyzph0F5Dmjp75uwHaHa?rs=1&pid=ImgDetMain" alt="Jupiter">
+                    <div class="galaxy-info">
+                        <h2 class="card-title">Jupiter</h2>
+                        <p class="card-text">Jupiter is the largest planet in the solar system and known for its massive storms.</p>
+						 <a href="#" class="btn btn-primary know-more-btn">Know More</a>
+            
+                    </div>
+                </div>
+            </div>
+            <!-- Add more planet cards here -->
+
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

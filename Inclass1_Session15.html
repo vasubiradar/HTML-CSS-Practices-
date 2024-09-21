@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily's Art Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles */
+        body {
+            background-color: #f8f9fa; /* Set a light background color */
+        }
+        .jumbotron {
+            background-image: url('https://th.bing.com/th/id/OIP.0ryxsZW-9HzLQc915SqsOwHaEK?rs=1&pid=ImgDetMain'); /* Set background image for jumbotron */
+            background-size: cover;
+            color: white;
+        }
+        .card-img-top {
+            height: 300px; /* Set a fixed height for the images in the cards */
+            object-fit: cover;
+        }
+        .footer {
+            background-color: #343a40; /* Set background color for footer */
+            color: white;
+            text-align: center;
+            padding: 20px 0; /* Add padding to footer */
+        }
+    </style>
+</head>
+<body>
+
+  
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4">Welcome to Krishi's Art Gallery</h1>
+            <p class="lead">Explore Krishi's masterpieces and immerse yourself in her creative world.</p>
+        </div>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="container">
+        <h2 class="text-center mb-4">Artistic Journey Progress</h2>
+        <!-- Bootstrap Animated Progress Bar -->
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+
+    </div>
+
+<br>
+<br><br>
+   
+ <!-- Image Cards -->
+<div class="container">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/sunset-serenity-johanna-froese.jpg" class="card-img-top" alt="Painting 1">
+                <div class="card-body">
+                    <h5 class="card-title">Sunset Serenity</h5>
+                    <p class="card-text">A serene landscape capturing the beauty of a sunset over the horizon.</p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                        More Details
+                    </button>
+                    <div class="collapse" id="collapse1">
+                        <div class="card card-body">
+                            Additional details about the painting can be displayed here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://th.bing.com/th/id/OIP.SL41D2rLSoczcV-0kkZmHgHaEK?rs=1&pid=ImgDetMain" class="card-img-top" alt="Painting 2">
+                <div class="card-body">
+                    <h5 class="card-title">Mystic Forest</h5>
+                    <p class="card-text">A mystical forest scene with vibrant colors and hidden secrets.</p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                        More Details
+                    </button>
+                    <div class="collapse" id="collapse2">
+                        <div class="card card-body">
+                            Additional details about the painting can be displayed here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="https://th.bing.com/th/id/OIP.z2X6GUbmDbOgMgRIENRQiAHaE8?rs=1&pid=ImgDetMain" class="card-img-top" alt="Painting 3">
+                <div class="card-body">
+                    <h5 class="card-title">Ocean Dreams</h5>
+                    <p class="card-text">A dreamy seascape painting capturing the tranquility of the ocean.</p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                        More Details
+                    </button>
+                    <div class="collapse" id="collapse3">
+                        <div class="card card-body">
+                            Additional details about the painting can be displayed here.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Add collapse buttons for the rest of the cards -->
+    <!-- Card 4 -->
+<div class="col-md-4">
+    <div class="card mb-4">
+        <img src="https://www.maxfosterphotography.com/images/xl/Mountain-Majesty.jpg" class="card-img-top" alt="Painting 4">
+        <div class="card-body">
+            <h5 class="card-title">Mountain Majesty</h5>
+            <p class="card-text">A majestic mountain landscape with snow-capped peaks and lush valleys.</p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                More Details
+            </button>
+            <div class="collapse" id="collapse4">
+                <div class="card card-body">
+                    Additional details about the painting can be displayed here.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 5 -->
+<div class="col-md-4">
+    <div class="card mb-4">
+        <img src="https://static.vecteezy.com/system/resources/previews/024/387/936/large_2x/fantasy-magical-enchanted-fairy-tale-landscape-fabulous-fairytale-garden-mysterious-background-and-glowing-in-night-magical-fantasy-fairy-tale-scenery-night-in-a-forest-generate-ai-free-photo.jpg" class="card-img-top" alt="Painting 5">
+        <div class="card-body">
+            <h5 class="card-title">Enchanted Garden</h5>
+            <p class="card-text">An enchanted garden filled with vibrant flowers and magical creatures.</p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                More Details
+            </button>
+            <div class="collapse" id="collapse5">
+                <div class="card card-body">
+                    Additional details about the painting can be displayed here.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Card 6 -->
+<div class="col-md-4">
+    <div class="card mb-4">
+        <img src="https://th.bing.com/th/id/OIP.QoamRHB6KRrwtC_qEV-LxQHaE7?rs=1&pid=ImgDetMain" class="card-img-top" alt="Painting 6">
+        <div class="card-body">
+            <h5 class="card-title">Cityscape Charm</h5>
+            <p class="card-text">A charming cityscape capturing the hustle and bustle of urban life.</p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                More Details
+            </button>
+            <div class="collapse" id="collapse6">
+                <div class="card card-body">
+                    Additional details about the painting can be displayed here.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

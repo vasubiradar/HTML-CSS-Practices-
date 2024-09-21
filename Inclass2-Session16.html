@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+		  background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-vector-school-bag-calculator-cyan-cartoon-banner-image_166801.jpg');
+            background-color: #f8f9fa;
+            padding-top: 50px;
+        }
+        .calculator {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            width: 75px;
+            height: 75px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 calculator">
+                <input type="text" id="display" class="form-control mb-3" readonly>
+                <div class="row">
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(7)">7</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(8)">8</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(9)">9</button>
+                    <button class="btn btn-outline-danger col-3" onclick="clearDisplay()">C</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(4)">4</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(5)">5</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(6)">6</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendOperator('+')">+</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(1)">1</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(2)">2</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(3)">3</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendOperator('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-outline-primary col-3" onclick="appendNumber(0)">0</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendOperator('.')">.</button>
+                    <button class="btn btn-outline-primary col-3" onclick="calculate()">=</button>
+                    <button class="btn btn-outline-primary col-3" onclick="appendOperator('*')">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-outline-secondary col-3" onclick="appendOperator('/')">/</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        let displayValue = '';
+
+        function appendNumber(number) {
+            displayValue += number;
+            document.getElementById('display').value = displayValue;
+        }
+
+        function appendOperator(operator) {
+            if (displayValue !== '' && !isNaN(displayValue[displayValue.length - 1])) {
+                displayValue += operator;
+                document.getElementById('display').value = displayValue;
+            }
+        }
+
+        function clearDisplay() {
+            displayValue = '';
+            document.getElementById('display').value = '';
+        }
+
+        function calculate() {
+            if (displayValue !== '' && !isNaN(displayValue[displayValue.length - 1])) {
+                let result = eval(displayValue);
+                document.getElementById('display').value = result;
+                displayValue = '';
+            }
+        }
+    </script>
+</body>
+</html>

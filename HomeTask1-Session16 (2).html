@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Group Classifier</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://www.shutterstock.com/image-vector/generations-men-all-age-categories-600nw-116111842.jpg'); /* Add your background image URL here */
+            background-size: cover;
+            background-position: center;
+            padding-top: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px; /* Adjust the width as needed */
+            margin: auto;
+            text-align: center;
+        }
+        .card-title {
+            color: #000; /* Black color */
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+        .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">Age Group Classifier</h5>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="age">Enter your age:</label>
+                    <input type="number" class="form-control" id="age" placeholder="Enter your age">
+                </div>
+                <button class="btn btn-primary" onclick="classifyAge()">Classify</button>
+                <div class="mt-3">
+                    <h6 class="font-weight-bold" id="result"></h6>
+                    <p id="specification"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        function classifyAge() {
+            // Get the age input value
+            var age = parseInt(document.getElementById('age').value);
+            var result = '';
+            var specification = '';
+
+            // Classify age based on specifications
+            switch (true) {
+                case (age >= 1 && age <= 10):
+                    result = 'Child';
+                    specification = 'Children are playful and curious.';
+                    break;
+                case (age >= 11 && age <= 17):
+                    result = 'Teenage';
+                    specification = 'Teenagers are full of energy and exploring their identities.';
+                    break;
+                case (age >= 18 && age <= 25):
+                    result = 'Young';
+                    specification = 'Young adults are ambitious and building their careers.';
+                    break;
+                case (age >= 26 && age <= 35):
+                    result = 'Elder';
+                    specification = 'Elders are experienced and contributing to society.';
+                    break;
+                case (age >= 36 && age <= 40):
+                    result = 'Old';
+                    specification = 'Older adults are wise and enjoying their lives.';
+                    break;
+                default:
+                    result = 'Unknown';
+                    specification = 'Please enter a valid age.';
+                    break;
+            }
+
+            // Display the result and specification
+            document.getElementById('result').innerText = `Age Group: ${result}`;
+            document.getElementById('specification').innerText = specification;
+        }
+    </script>
+</body>
+</html>

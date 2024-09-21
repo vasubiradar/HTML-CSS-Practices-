@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LearningHub - Course Schedule</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .jumbotron {
+      background-color: yellow;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .container-fluid {
+      padding: 20px;
+    }
+    .table th, .table td {
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4">LearningHub</h1>
+      <p class="lead">Empowering Your Learning Journey</p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container-fluid">
+    <h2 class="mb-4">Course Schedule</h2>
+    <!-- Department Course Schedule Tables -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Computer Science Department</h3>
+        <table class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>Time</th>
+              <th>Course</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>9:00 AM - 11:00 AM</td>
+              <td>Web Development</td>
+            </tr>
+            <!-- Add more rows for other courses -->
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <h3>Business Administration Department</h3>
+        <table class="table table-bordered">
+          <thead class="thead-dark">
+            <tr>
+              <th>Time</th>
+              <th>Course</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>11:00 AM - 1:00 PM</td>
+              <td>Marketing Strategies</td>
+            </tr>
+            <!-- Add more rows for other courses -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventify Event Management Platform</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-image: url('https://th.bing.com/th/id/OIP.auf_QDXFgrxK5RujsytxYQHaEl?rs=1&pid=ImgDetMain'); /* Background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .alert {
+            margin-top: 20px;
+        }
+
+        table {
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        th {
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        .glyphicon {
+            margin-right: 5px;
+        }
+
+        .navbar-nav .nav-link {
+            margin-right: 10px; /* Add margin between nav links */
+        }
+
+        /* Bootstrap card */
+        .card {
+            margin-top: 20px;
+            max-width: 400px; /* Increased size of cards */
+        }
+
+        .card-img-top {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer input[type="email"],
+        .footer input[type="submit"] {
+            margin: 5px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .footer input[type="submit"] {
+            background-color: #f8f9fa;
+            color: #343a40;
+            cursor: pointer;
+        }
+
+        .footer input[type="submit"]:hover {
+            background-color: #e9ecef;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Eventify</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-calendar"></i> Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-info-circle"></i> About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="far fa-envelope"></i> Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Alert for Real-time Updates -->
+    <div class="alert alert-info" role="alert">
+        <strong>Real-time Update:</strong> Event venue changed to Convention Center. Please take note!
+    </div>
+
+    <!-- Bootstrap Cards with Images -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.hSJvkjfhx95Isbpe7I2JiAHaE8?rs=1&pid=ImgDetMain" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.3uQ0DFYUhcVbLEyAGa55mgHaEK?rs=1&pid=ImgDetMain" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="https://th.bing.com/th/id/OIP.Rlmrdd_4CzQNKKLlswa_7wHaFj?rs=1&pid=ImgDetMain" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Title 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <h3>Join Our Event Platform</h3>
+            <form action="#" method="POST">
+                <input type="email" name="email" placeholder="Enter your email">
+                <input type="submit" value="Join Now">
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-vZFGwXXO5QS6q7gJC3ZrY5J2b/5DL+viFCu4ZOxSN2WpL+Z1HuOJHmlBj3g/5JvZ"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
